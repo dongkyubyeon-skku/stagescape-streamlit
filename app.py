@@ -27,11 +27,6 @@ h1, h2, h3, h4, p, li, label, span, div {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-[data-testid="stMarkdownContainer"] {
-    color: #ffffff !important;
-}
-
-/* selectbox */
 .stSelectbox label {
     color: white !important;
     font-weight: 800 !important;
@@ -54,7 +49,6 @@ div[data-baseweb="popover"] * {
     color: #111111 !important;
 }
 
-/* tabs */
 button[data-baseweb="tab"] p {
     color: #ffffff !important;
     font-weight: 700 !important;
@@ -64,7 +58,6 @@ button[data-baseweb="tab"][aria-selected="true"] p {
     color: #ff5ac8 !important;
 }
 
-/* hero */
 .hero-box {
     padding: 56px;
     border-radius: 36px;
@@ -95,7 +88,6 @@ button[data-baseweb="tab"][aria-selected="true"] p {
     margin-top: 22px;
 }
 
-/* card */
 .card {
     background: rgba(8,8,16,0.88);
     border: 1px solid rgba(255,255,255,0.18);
@@ -105,9 +97,8 @@ button[data-baseweb="tab"][aria-selected="true"] p {
     box-shadow: 0 24px 60px rgba(0,0,0,0.38);
 }
 
-/* visual card instead of unstable images */
 .visual-card {
-    height: 240px;
+    height: 230px;
     border-radius: 28px;
     background:
     linear-gradient(135deg, rgba(255,60,180,0.9), rgba(55,145,255,0.85)),
@@ -122,7 +113,7 @@ button[data-baseweb="tab"][aria-selected="true"] p {
 }
 
 .visual-logo {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 950;
     letter-spacing: -1px;
     color: white !important;
@@ -131,7 +122,7 @@ button[data-baseweb="tab"][aria-selected="true"] p {
 .visual-sub {
     margin-top: 10px;
     font-size: 15px;
-    color: rgba(255,255,255,0.85) !important;
+    color: rgba(255,255,255,0.88) !important;
 }
 
 .meta-text {
@@ -158,7 +149,6 @@ button[data-baseweb="tab"][aria-selected="true"] p {
     font-weight: 800;
 }
 
-/* custom link button */
 .reference-button {
     display: inline-block;
     margin-top: 18px;
@@ -175,7 +165,6 @@ button[data-baseweb="tab"][aria-selected="true"] p {
     color: white !important;
 }
 
-/* stats */
 .stat-box {
     padding: 30px;
     border-radius: 26px;
@@ -197,201 +186,58 @@ button[data-baseweb="tab"][aria-selected="true"] p {
 
 
 concerts = [
-    {
-        "artist": "BTS",
-        "title": "Permission To Dance On Stage",
-        "logo": "BTS",
-        "venue": "SoFi Stadium / Olympic Stadium",
-        "scale": "Mega Stadium",
-        "audience": "50,000+",
-        "year": "2021–2022",
-        "production": "HYBE Production",
-        "tags": ["LED Wall", "Projection Mapping", "Automated Lift"],
-        "analysis": "Stadium-scale LED screens and extended runways were used to keep the performance visible and emotionally immersive across a very large venue.",
-        "visual_link": "https://www.youtube.com/results?search_query=BTS+Permission+To+Dance+On+Stage+concert"
-    },
-    {
-        "artist": "BLACKPINK",
-        "title": "BORN PINK WORLD TOUR",
-        "logo": "BLACKPINK",
-        "venue": "Gocheok Sky Dome / Global Stadiums",
-        "scale": "World Stadium Tour",
-        "audience": "55,000+",
-        "year": "2022–2023",
-        "production": "YG Stage Team",
-        "tags": ["LED Wall", "Kinetic Stage", "Laser System", "Drone Show"],
-        "analysis": "The tour used bold LED visuals, strong lighting contrast, and large moving stage structures to create a luxury-pop concert identity.",
-        "visual_link": "https://www.youtube.com/results?search_query=BLACKPINK+BORN+PINK+WORLD+TOUR+stage"
-    },
-    {
-        "artist": "aespa",
-        "title": "SYNK : HYPER LINE",
-        "logo": "aespa",
-        "venue": "KSPO Dome",
-        "scale": "Arena Tour",
-        "audience": "15,000+",
-        "year": "2023",
-        "production": "SM Visual Production",
-        "tags": ["XR", "AR Camera", "LED Wall"],
-        "analysis": "The concert connects aespa’s virtual-world concept with avatar-like visuals, immersive LED environments, and camera-based digital effects.",
-        "visual_link": "https://www.youtube.com/results?search_query=aespa+SYNK+HYPER+LINE+concert+stage"
-    },
-    {
-        "artist": "SEVENTEEN",
-        "title": "FOLLOW TOUR",
-        "logo": "SEVENTEEN",
-        "venue": "Seoul / Tokyo Dome",
-        "scale": "Dome Tour",
-        "audience": "45,000+",
-        "year": "2023–2024",
-        "production": "PLEDIS Production",
-        "tags": ["LED Wall", "Kinetic Stage", "Automated Lift"],
-        "analysis": "Extended stage architecture and moving platforms support group choreography while increasing audience connection in large dome venues.",
-        "visual_link": "https://www.youtube.com/results?search_query=SEVENTEEN+FOLLOW+TOUR+stage"
-    },
-    {
-        "artist": "IU",
-        "title": "The Golden Hour",
-        "logo": "IU",
-        "venue": "Olympic Stadium",
-        "scale": "Stadium Concert",
-        "audience": "45,000+",
-        "year": "2022",
-        "production": "EDAM Production",
-        "tags": ["Drone Show", "Projection Mapping", "LED Wall"],
-        "analysis": "Drone visuals, warm lighting, and poetic stadium-scale screen design created an emotional visual narrative.",
-        "visual_link": "https://www.youtube.com/results?search_query=IU+The+Golden+Hour+concert+drone+show"
-    },
-    {
-        "artist": "NCT 127",
-        "title": "NEO CITY",
-        "logo": "NCT 127",
-        "venue": "Tokyo Dome / KSPO Dome",
-        "scale": "Dome Tour",
-        "audience": "50,000+",
-        "year": "2022–2023",
-        "production": "SM Stage Division",
-        "tags": ["XR", "Kinetic Stage", "LED Wall", "Laser System"],
-        "analysis": "Cyberpunk-inspired visuals, modular stage construction, and intense lighting systems created a futuristic concert identity.",
-        "visual_link": "https://www.youtube.com/results?search_query=NCT+127+NEO+CITY+concert+stage"
-    },
-    {
-        "artist": "Stray Kids",
-        "title": "MANIAC / 5-STAR Tour",
-        "logo": "SKZ",
-        "venue": "KSPO Dome / Global Arenas",
-        "scale": "Arena Tour",
-        "audience": "15,000–40,000",
-        "year": "2022–2024",
-        "production": "JYP Production",
-        "tags": ["LED Wall", "Laser System", "Kinetic Stage"],
-        "analysis": "Sharp lighting, industrial video design, and powerful LED environments match the group’s intense performance style.",
-        "visual_link": "https://www.youtube.com/results?search_query=Stray+Kids+MANIAC+concert+stage"
-    },
-    {
-        "artist": "TXT",
-        "title": "ACT : SWEET MIRAGE",
-        "logo": "TXT",
-        "venue": "KSPO Dome / Global Arenas",
-        "scale": "Arena Tour",
-        "audience": "15,000+",
-        "year": "2023",
-        "production": "HYBE Production",
-        "tags": ["Projection Mapping", "LED Wall", "Automated Lift"],
-        "analysis": "Fantasy-like visual direction is supported through scenic LED imagery, theatrical transitions, and layered stage space.",
-        "visual_link": "https://www.youtube.com/results?search_query=TXT+ACT+SWEET+MIRAGE+stage"
-    },
-    {
-        "artist": "ENHYPEN",
-        "title": "FATE Tour",
-        "logo": "ENHYPEN",
-        "venue": "KSPO Dome / Global Arenas",
-        "scale": "Arena Tour",
-        "audience": "15,000+",
-        "year": "2023–2024",
-        "production": "BELIFT / HYBE",
-        "tags": ["LED Wall", "Projection Mapping", "Kinetic Stage"],
-        "analysis": "Dark fantasy visuals and moving stage structures build a dramatic narrative-oriented concert atmosphere.",
-        "visual_link": "https://www.youtube.com/results?search_query=ENHYPEN+FATE+Tour+stage"
-    },
-    {
-        "artist": "LE SSERAFIM",
-        "title": "FLAME RISES",
-        "logo": "LE SSERAFIM",
-        "venue": "Jamsil Indoor Stadium",
-        "scale": "Arena Concert",
-        "audience": "10,000+",
-        "year": "2023",
-        "production": "Source Music / HYBE",
-        "tags": ["LED Wall", "Laser System", "Automated Lift"],
-        "analysis": "Minimal but powerful stage visuals emphasize choreography, confidence, and strong lighting contrast.",
-        "visual_link": "https://www.youtube.com/results?search_query=LE+SSERAFIM+FLAME+RISES+concert+stage"
-    },
-    {
-        "artist": "NewJeans",
-        "title": "Lollapalooza / Bunnies Camp",
-        "logo": "NewJeans",
-        "venue": "Festival Stage / Fan Meeting Venue",
-        "scale": "Festival / Fan Meeting",
-        "audience": "Large Festival",
-        "year": "2023–2024",
-        "production": "ADOR",
-        "tags": ["LED Wall", "Projection Mapping"],
-        "analysis": "Clean graphic visuals and retro-inspired screen design support the group’s casual and nostalgic visual identity.",
-        "visual_link": "https://www.youtube.com/results?search_query=NewJeans+Lollapalooza+stage"
-    },
-    {
-        "artist": "IVE",
-        "title": "SHOW WHAT I HAVE",
-        "logo": "IVE",
-        "venue": "KSPO Dome / Global Arenas",
-        "scale": "Arena Tour",
-        "audience": "15,000+",
-        "year": "2023–2024",
-        "production": "Starship Entertainment",
-        "tags": ["LED Wall", "Automated Lift", "Projection Mapping"],
-        "analysis": "Elegant large-screen visuals and vertical stage composition reinforce the group’s polished performance image.",
-        "visual_link": "https://www.youtube.com/results?search_query=IVE+SHOW+WHAT+I+HAVE+concert+stage"
-    },
-    {
-        "artist": "TWICE",
-        "title": "READY TO BE",
-        "logo": "TWICE",
-        "venue": "KSPO Dome / Stadiums",
-        "scale": "World Stadium Tour",
-        "audience": "40,000+",
-        "year": "2023–2024",
-        "production": "JYP Production",
-        "tags": ["LED Wall", "Kinetic Stage", "Automated Lift"],
-        "analysis": "A bright pop concert system designed for member movement, large audience visibility, and colorful screen-based production.",
-        "visual_link": "https://www.youtube.com/results?search_query=TWICE+READY+TO+BE+concert+stage"
-    },
-    {
-        "artist": "MAMA Awards",
-        "title": "MAMA Awards Stage",
-        "logo": "MAMA",
-        "venue": "Kyocera Dome / Tokyo Dome",
-        "scale": "Award Ceremony",
-        "audience": "40,000+",
-        "year": "2023–2024",
-        "production": "CJ ENM",
-        "tags": ["XR", "Projection Mapping", "AR Camera", "LED Wall"],
-        "analysis": "Award-show staging combines broadcast XR, camera effects, large LED backdrops, and fast-changing performance sets.",
-        "visual_link": "https://www.youtube.com/results?search_query=MAMA+Awards+XR+stage+performance"
-    },
-    {
-        "artist": "Coachella",
-        "title": "K-pop Festival Stages",
-        "logo": "COACHELLA",
-        "venue": "Coachella Stage",
-        "scale": "Outdoor Festival",
-        "audience": "Large Festival",
-        "year": "2019–2024",
-        "production": "Festival Production",
-        "tags": ["LED Wall", "Laser System", "Projection Mapping"],
-        "analysis": "Outdoor festival staging emphasizes strong screen visibility, simplified scenic structure, and broadcast impact.",
-        "visual_link": "https://www.youtube.com/results?search_query=Kpop+Coachella+stage+performance"
-    }
+    {"artist":"BTS","title":"Permission To Dance On Stage","logo":"BTS","venue":"SoFi Stadium / Olympic Stadium","scale":"Mega Stadium","audience":"50,000+","year":"2021–2022","production":"HYBE Production","tags":["LED Wall","Projection Mapping","Automated Lift","Moving Runway"],"analysis":"Stadium-scale LED screens and extended runways were used to keep the performance visible and immersive across a very large venue.","visual_link":"https://www.youtube.com/results?search_query=BTS+Permission+To+Dance+On+Stage+concert"},
+    {"artist":"BTS","title":"Love Yourself: Speak Yourself","logo":"BTS","venue":"Wembley Stadium / Global Stadiums","scale":"World Stadium Tour","audience":"60,000+","year":"2019","production":"Big Hit Production","tags":["LED Wall","Pyrotechnics","Moving Runway","Laser System"],"analysis":"A stadium-scale tour using large LED architecture, fireworks, and extended stage routes to connect with distant audience sections.","visual_link":"https://www.youtube.com/results?search_query=BTS+Speak+Yourself+Wembley+stage"},
+    {"artist":"BLACKPINK","title":"BORN PINK WORLD TOUR","logo":"BLACKPINK","venue":"Gocheok Sky Dome / Global Stadiums","scale":"World Stadium Tour","audience":"55,000+","year":"2022–2023","production":"YG Stage Team","tags":["LED Wall","Kinetic Stage","Laser System","Drone Show"],"analysis":"The tour used bold LED visuals, strong lighting contrast, and moving stage structures to create a luxury-pop concert identity.","visual_link":"https://www.youtube.com/results?search_query=BLACKPINK+BORN+PINK+WORLD+TOUR+stage"},
+    {"artist":"BLACKPINK","title":"IN YOUR AREA WORLD TOUR","logo":"BLACKPINK","venue":"Global Arenas","scale":"World Arena Tour","audience":"10,000–20,000","year":"2018–2020","production":"YG Entertainment","tags":["LED Wall","Laser System","Moving Runway"],"analysis":"Arena-scale screens and runways supported the group’s strong performance identity and direct audience interaction.","visual_link":"https://www.youtube.com/results?search_query=BLACKPINK+IN+YOUR+AREA+concert+stage"},
+    {"artist":"BIGBANG","title":"MADE WORLD TOUR","logo":"BIGBANG","venue":"Olympic Gymnastics Arena / Global Arenas","scale":"World Tour","audience":"Large Arena","year":"2015–2016","production":"YG Entertainment","tags":["LED Wall","Kinetic Stage","Laser System"],"analysis":"A bold arena concert structure built around large video screens, band-like performance energy, and dramatic light transitions.","visual_link":"https://www.youtube.com/results?search_query=BIGBANG+MADE+Tour+stage"},
+    {"artist":"G-DRAGON","title":"ACT III: M.O.T.T.E","logo":"G-DRAGON","venue":"World Tour Arenas","scale":"Solo World Tour","audience":"Large Arena","year":"2017","production":"YG Entertainment","tags":["LED Wall","Projection Mapping","Laser System"],"analysis":"A highly art-directed solo concert using symbolic visuals, intense red lighting, and theatrical screen imagery.","visual_link":"https://www.youtube.com/results?search_query=G-DRAGON+MOTTE+concert+stage"},
+    {"artist":"aespa","title":"SYNK: HYPER LINE","logo":"aespa","venue":"KSPO Dome","scale":"Arena Tour","audience":"15,000+","year":"2023","production":"SM Visual Production","tags":["XR","AR Camera","LED Wall","Virtual Production"],"analysis":"The concert connects aespa’s virtual-world concept with avatar-like visuals, immersive LED environments, and camera-based digital effects.","visual_link":"https://www.youtube.com/results?search_query=aespa+SYNK+HYPER+LINE+concert+stage"},
+    {"artist":"aespa","title":"SYNK: PARALLEL LINE","logo":"aespa","venue":"Jamsil Indoor Stadium / Global Arenas","scale":"Arena Tour","audience":"10,000+","year":"2024","production":"SM Visual Production","tags":["XR","LED Wall","AR Camera","Laser System"],"analysis":"A performance system continuing aespa’s digital-world identity through layered LED space, cyber visuals, and camera-based effects.","visual_link":"https://www.youtube.com/results?search_query=aespa+SYNK+PARALLEL+LINE+concert+stage"},
+    {"artist":"NCT 127","title":"NEO CITY: THE LINK","logo":"NCT 127","venue":"Tokyo Dome / KSPO Dome","scale":"Dome Tour","audience":"50,000+","year":"2022–2023","production":"SM Stage Division","tags":["XR","Kinetic Stage","LED Wall","Laser System"],"analysis":"Cyberpunk-inspired visuals, modular stage construction, and intense lighting systems created a futuristic concert identity.","visual_link":"https://www.youtube.com/results?search_query=NCT+127+NEO+CITY+THE+LINK+concert+stage"},
+    {"artist":"NCT DREAM","title":"THE DREAM SHOW 2","logo":"NCT DREAM","venue":"Jamsil Olympic Stadium / Global Arenas","scale":"Stadium / Arena Tour","audience":"30,000+","year":"2022–2023","production":"SM Entertainment","tags":["LED Wall","Moving Runway","Confetti System","Laser System"],"analysis":"Large LED screens and extended stage routes support youthful energy and high audience contact across a large venue.","visual_link":"https://www.youtube.com/results?search_query=NCT+DREAM+THE+DREAM+SHOW+2+stage"},
+    {"artist":"NCT DREAM","title":"THE DREAM SHOW 3","logo":"NCT DREAM","venue":"Gocheok Sky Dome / Global Arenas","scale":"Dome / Arena Tour","audience":"20,000+","year":"2024","production":"SM Entertainment","tags":["LED Wall","Kinetic Stage","Laser System"],"analysis":"A dome-scale visual system built around bright LED graphics, large stage depth, and synchronized light movement.","visual_link":"https://www.youtube.com/results?search_query=NCT+DREAM+THE+DREAM+SHOW+3+stage"},
+    {"artist":"NCT WISH","title":"NCT WISH ASIA TOUR","logo":"NCT WISH","venue":"Asia Tour Venues","scale":"Theater / Arena Tour","audience":"Small–Mid Venue","year":"2024–2025","production":"SM Entertainment","tags":["LED Wall","Projection Mapping","Interactive LED"],"analysis":"A smaller-scale tour format using clean LED graphics and character-driven visual elements to build group identity.","visual_link":"https://www.youtube.com/results?search_query=NCT+WISH+concert+stage"},
+    {"artist":"EXO","title":"EXO PLANET #2: The EXO'luxion","logo":"EXO","venue":"Olympic Gymnastics Arena / Global Arenas","scale":"Arena Tour","audience":"15,000+","year":"2015–2016","production":"SM Entertainment","tags":["Hologram","LED Wall","Projection Mapping","Moving Runway"],"analysis":"Earlier large-scale K-pop touring used hologram-like effects, theatrical VCRs, and fantasy stage environments.","visual_link":"https://www.youtube.com/results?search_query=EXO+PLANET+EXOluxion+hologram+stage"},
+    {"artist":"EXO","title":"EXO PLANET #5: EXplOration","logo":"EXO","venue":"KSPO Dome / Global Arenas","scale":"Arena Tour","audience":"15,000+","year":"2019","production":"SM Entertainment","tags":["LED Wall","Laser System","Projection Mapping"],"analysis":"A polished arena-stage system using sci-fi visuals, strong LED backdrops, and dramatic performance lighting.","visual_link":"https://www.youtube.com/results?search_query=EXO+EXplOration+concert+stage"},
+    {"artist":"SHINee","title":"SHINee WORLD VI: PERFECT ILLUMINATION","logo":"SHINee","venue":"KSPO Dome / Tokyo Dome","scale":"Arena / Dome Tour","audience":"15,000–50,000","year":"2023–2024","production":"SM Entertainment","tags":["LED Wall","Laser System","Moving Runway","Follow Spot System"],"analysis":"Lighting design plays a central role, supporting SHINee’s performance identity with precise spotlights and elegant screen visuals.","visual_link":"https://www.youtube.com/results?search_query=SHINee+PERFECT+ILLUMINATION+concert+stage"},
+    {"artist":"TVXQ","title":"TVXQ LIVE TOUR","logo":"TVXQ","venue":"Tokyo Dome / Nissan Stadium","scale":"Dome / Stadium Tour","audience":"50,000+","year":"2013–2019","production":"SM / Avex","tags":["LED Wall","Moving Runway","Pyrotechnics","Automated Lift"],"analysis":"Large Japanese dome and stadium productions rely on massive runways, lifts, and pyrotechnics to sustain scale and visibility.","visual_link":"https://www.youtube.com/results?search_query=TVXQ+Tokyo+Dome+concert+stage"},
+    {"artist":"Red Velvet","title":"R to V","logo":"Red Velvet","venue":"KSPO Dome / Global Venues","scale":"Arena Tour","audience":"10,000+","year":"2023","production":"SM Entertainment","tags":["LED Wall","Projection Mapping","Theatrical Set"],"analysis":"A concept-driven show using contrasting visual worlds, scenic set changes, and screen graphics to reflect dual identities.","visual_link":"https://www.youtube.com/results?search_query=Red+Velvet+R+to+V+concert+stage"},
+    {"artist":"SEVENTEEN","title":"FOLLOW TOUR","logo":"SEVENTEEN","venue":"Seoul / Tokyo Dome","scale":"Dome Tour","audience":"45,000+","year":"2023–2024","production":"PLEDIS Production","tags":["LED Wall","Kinetic Stage","Automated Lift","Moving Runway"],"analysis":"Extended stage architecture and moving platforms support group choreography while increasing audience connection in large dome venues.","visual_link":"https://www.youtube.com/results?search_query=SEVENTEEN+FOLLOW+TOUR+stage"},
+    {"artist":"SEVENTEEN","title":"BE THE SUN","logo":"SEVENTEEN","venue":"Gocheok Sky Dome / Global Arenas","scale":"World Arena Tour","audience":"20,000+","year":"2022","production":"PLEDIS Production","tags":["LED Wall","Laser System","Moving Runway"],"analysis":"A bright and powerful concert design using large LED screens and runways to support high-energy group choreography.","visual_link":"https://www.youtube.com/results?search_query=SEVENTEEN+BE+THE+SUN+concert+stage"},
+    {"artist":"TXT","title":"ACT: SWEET MIRAGE","logo":"TXT","venue":"KSPO Dome / Global Arenas","scale":"Arena Tour","audience":"15,000+","year":"2023","production":"HYBE Production","tags":["Projection Mapping","LED Wall","Automated Lift","Theatrical Set"],"analysis":"Fantasy-like visual direction is supported through scenic LED imagery, theatrical transitions, and layered stage space.","visual_link":"https://www.youtube.com/results?search_query=TXT+ACT+SWEET+MIRAGE+stage"},
+    {"artist":"TXT","title":"ACT: PROMISE","logo":"TXT","venue":"KSPO Dome / Global Arenas","scale":"Arena Tour","audience":"15,000+","year":"2024","production":"HYBE Production","tags":["LED Wall","Projection Mapping","Moving Runway"],"analysis":"A narrative-driven arena show using wide LED compositions and scenic transitions to connect performances into a fantasy journey.","visual_link":"https://www.youtube.com/results?search_query=TXT+ACT+PROMISE+concert+stage"},
+    {"artist":"ENHYPEN","title":"FATE Tour","logo":"ENHYPEN","venue":"KSPO Dome / Global Arenas","scale":"Arena Tour","audience":"15,000+","year":"2023–2024","production":"BELIFT / HYBE","tags":["LED Wall","Projection Mapping","Kinetic Stage","Laser System"],"analysis":"Dark fantasy visuals and moving stage structures build a dramatic narrative-oriented concert atmosphere.","visual_link":"https://www.youtube.com/results?search_query=ENHYPEN+FATE+Tour+stage"},
+    {"artist":"ENHYPEN","title":"MANIFESTO Tour","logo":"ENHYPEN","venue":"Global Arenas","scale":"Arena Tour","audience":"10,000+","year":"2022–2023","production":"BELIFT / HYBE","tags":["LED Wall","Laser System","Moving Runway"],"analysis":"High-contrast lighting and large video walls reinforce the group’s dark performance style and narrative imagery.","visual_link":"https://www.youtube.com/results?search_query=ENHYPEN+MANIFESTO+concert+stage"},
+    {"artist":"LE SSERAFIM","title":"FLAME RISES","logo":"LE SSERAFIM","venue":"Jamsil Indoor Stadium","scale":"Arena Concert","audience":"10,000+","year":"2023","production":"Source Music / HYBE","tags":["LED Wall","Laser System","Automated Lift"],"analysis":"Minimal but powerful stage visuals emphasize choreography, confidence, and strong lighting contrast.","visual_link":"https://www.youtube.com/results?search_query=LE+SSERAFIM+FLAME+RISES+concert+stage"},
+    {"artist":"NewJeans","title":"Lollapalooza / Bunnies Camp","logo":"NewJeans","venue":"Festival Stage / Fan Meeting Venue","scale":"Festival / Fan Meeting","audience":"Large Festival","year":"2023–2024","production":"ADOR","tags":["LED Wall","Projection Mapping","Graphic Screen Design"],"analysis":"Clean graphic visuals and retro-inspired screen design support the group’s casual and nostalgic visual identity.","visual_link":"https://www.youtube.com/results?search_query=NewJeans+Lollapalooza+stage"},
+    {"artist":"TWS","title":"Fan Meeting / Showcase Stages","logo":"TWS","venue":"Showcase Venues","scale":"Showcase / Fan Meeting","audience":"Small–Mid Venue","year":"2024","production":"PLEDIS Production","tags":["LED Wall","Graphic Screen Design","Follow Spot System"],"analysis":"A clean debut-stage system using bright LED graphics and simple spatial composition to highlight group identity.","visual_link":"https://www.youtube.com/results?search_query=TWS+showcase+stage"},
+    {"artist":"BOYNEXTDOOR","title":"ONEDOORful Day","logo":"BND","venue":"Fan Meeting Venues","scale":"Fan Meeting / Theater","audience":"Small–Mid Venue","year":"2024","production":"KOZ / HYBE","tags":["LED Wall","Theatrical Set","Graphic Screen Design"],"analysis":"Set-based staging and approachable graphics create a neighborhood-themed performance atmosphere.","visual_link":"https://www.youtube.com/results?search_query=BOYNEXTDOOR+concert+stage"},
+    {"artist":"Stray Kids","title":"MANIAC / 5-STAR Tour","logo":"SKZ","venue":"KSPO Dome / Global Arenas","scale":"Arena Tour","audience":"15,000–40,000","year":"2022–2024","production":"JYP Production","tags":["LED Wall","Laser System","Kinetic Stage","Pyrotechnics"],"analysis":"Sharp lighting, industrial video design, and powerful LED environments match the group’s intense performance style.","visual_link":"https://www.youtube.com/results?search_query=Stray+Kids+MANIAC+concert+stage"},
+    {"artist":"Stray Kids","title":"dominATE World Tour","logo":"SKZ","venue":"Global Stadiums / Arenas","scale":"World Tour","audience":"Large Arena / Stadium","year":"2024–2025","production":"JYP Production","tags":["LED Wall","Laser System","Moving Runway","Pyrotechnics"],"analysis":"A larger tour format emphasizing aggressive lighting, stadium visibility, and high-impact performance moments.","visual_link":"https://www.youtube.com/results?search_query=Stray+Kids+dominATE+world+tour+stage"},
+    {"artist":"TWICE","title":"READY TO BE","logo":"TWICE","venue":"KSPO Dome / Global Stadiums","scale":"World Stadium Tour","audience":"40,000+","year":"2023–2024","production":"JYP Production","tags":["LED Wall","Kinetic Stage","Automated Lift","Moving Runway"],"analysis":"A bright pop concert system designed for member movement, large audience visibility, and colorful screen-based production.","visual_link":"https://www.youtube.com/results?search_query=TWICE+READY+TO+BE+concert+stage"},
+    {"artist":"TWICE","title":"III World Tour","logo":"TWICE","venue":"KSPO Dome / Global Arenas","scale":"World Arena Tour","audience":"10,000–20,000","year":"2021–2022","production":"JYP Production","tags":["LED Wall","Moving Runway","Confetti System"],"analysis":"A flexible arena setup combining vivid screens, extended stages, and celebratory audience effects.","visual_link":"https://www.youtube.com/results?search_query=TWICE+III+World+Tour+stage"},
+    {"artist":"ITZY","title":"CHECKMATE Tour","logo":"ITZY","venue":"Global Arenas","scale":"World Tour","audience":"10,000+","year":"2022–2023","production":"JYP Production","tags":["LED Wall","Laser System","Moving Runway"],"analysis":"High-energy lighting and LED visuals support sharp choreography and confident performance branding.","visual_link":"https://www.youtube.com/results?search_query=ITZY+CHECKMATE+concert+stage"},
+    {"artist":"ITZY","title":"BORN TO BE Tour","logo":"ITZY","venue":"Jamsil Indoor Stadium / Global Venues","scale":"World Tour","audience":"10,000+","year":"2024","production":"JYP Production","tags":["LED Wall","Laser System","Automated Lift"],"analysis":"A more intense stage identity built through dark lighting, powerful screen graphics, and choreographic focus.","visual_link":"https://www.youtube.com/results?search_query=ITZY+BORN+TO+BE+concert+stage"},
+    {"artist":"NMIXX","title":"NICE TO MIXX YOU","logo":"NMIXX","venue":"Theater / Arena Venues","scale":"Showcase Tour","audience":"Small–Mid Venue","year":"2023","production":"JYP Production","tags":["LED Wall","Graphic Screen Design","Follow Spot System"],"analysis":"Compact tour staging uses graphic LED visuals and clean lighting to support live vocals and performance transitions.","visual_link":"https://www.youtube.com/results?search_query=NMIXX+NICE+TO+MIXX+YOU+stage"},
+    {"artist":"IVE","title":"SHOW WHAT I HAVE","logo":"IVE","venue":"KSPO Dome / Global Arenas","scale":"Arena Tour","audience":"15,000+","year":"2023–2024","production":"Starship Entertainment","tags":["LED Wall","Automated Lift","Projection Mapping"],"analysis":"Elegant large-screen visuals and vertical stage composition reinforce the group’s polished performance image.","visual_link":"https://www.youtube.com/results?search_query=IVE+SHOW+WHAT+I+HAVE+concert+stage"},
+    {"artist":"MONSTA X","title":"NO LIMIT Tour","logo":"MONSTA X","venue":"Global Arenas","scale":"World Tour","audience":"Large Arena","year":"2022","production":"Starship Entertainment","tags":["LED Wall","Laser System","Pyrotechnics"],"analysis":"Strong lighting, large screens, and explosive effects support a powerful performance-centered concert image.","visual_link":"https://www.youtube.com/results?search_query=MONSTA+X+NO+LIMIT+concert+stage"},
+    {"artist":"IU","title":"The Golden Hour","logo":"IU","venue":"Olympic Stadium","scale":"Stadium Concert","audience":"45,000+ per day","year":"2022","production":"EDAM Production","tags":["Drone Show","Projection Mapping","LED Wall","Follow Spot System"],"analysis":"Drone visuals, warm lighting, and poetic stadium-scale screen design created an emotional visual narrative.","visual_link":"https://www.youtube.com/results?search_query=IU+The+Golden+Hour+concert+drone+show"},
+    {"artist":"IU","title":"HEREH World Tour","logo":"IU","venue":"KSPO Dome / Global Arenas","scale":"World Tour","audience":"10,000+","year":"2024","production":"EDAM Production","tags":["LED Wall","Projection Mapping","Moving Runway"],"analysis":"A refined world-tour system using emotional screen imagery, delicate lighting, and strong audience intimacy.","visual_link":"https://www.youtube.com/results?search_query=IU+HEREH+World+Tour+stage"},
+    {"artist":"TAEMIN","title":"METAMORPH","logo":"TAEMIN","venue":"Inspire Arena","scale":"Arena Concert","audience":"10,000+","year":"2023","production":"SM Entertainment","tags":["Kinetic Stage","LED Wall","Laser System","Theatrical Set"],"analysis":"A performance-art-oriented concert using dramatic structures, controlled lighting, and choreographic staging.","visual_link":"https://www.youtube.com/results?search_query=TAEMIN+METAMORPH+concert+stage"},
+    {"artist":"TAEYEON","title":"The ODD Of LOVE","logo":"TAEYEON","venue":"KSPO Dome / Asia Venues","scale":"Arena Tour","audience":"10,000+","year":"2023","production":"SM Entertainment","tags":["LED Wall","Projection Mapping","Follow Spot System"],"analysis":"A vocal-centered concert where lighting and screen imagery create mood shifts without overpowering the performer.","visual_link":"https://www.youtube.com/results?search_query=TAEYEON+The+ODD+Of+LOVE+concert+stage"},
+    {"artist":"MAMA Awards","title":"MAMA Awards Stage","logo":"MAMA","venue":"Kyocera Dome / Tokyo Dome","scale":"Award Ceremony","audience":"40,000+","year":"2023–2024","production":"CJ ENM","tags":["XR","Projection Mapping","AR Camera","LED Wall","Virtual Production"],"analysis":"Award-show staging combines broadcast XR, camera effects, large LED backdrops, and fast-changing performance sets.","visual_link":"https://www.youtube.com/results?search_query=MAMA+Awards+XR+stage+performance"},
+    {"artist":"Melon Music Awards","title":"MMA Stage","logo":"MMA","venue":"Inspire Arena / Gocheok Sky Dome","scale":"Award Ceremony","audience":"Large Arena","year":"2022–2024","production":"Kakao / Melon","tags":["LED Wall","Projection Mapping","AR Camera"],"analysis":"Broadcast-focused stage design uses large LED systems and camera effects to highlight individual artist concepts.","visual_link":"https://www.youtube.com/results?search_query=Melon+Music+Awards+stage+performance"},
+    {"artist":"Golden Disc Awards","title":"Golden Disc Awards Stage","logo":"GDA","venue":"Global Arena Venues","scale":"Award Ceremony","audience":"Large Arena","year":"2022–2024","production":"GDA Production","tags":["LED Wall","Laser System","Projection Mapping"],"analysis":"Award-show staging uses flexible LED backdrops and fast transition systems for multiple artists in one event.","visual_link":"https://www.youtube.com/results?search_query=Golden+Disc+Awards+Kpop+stage"},
+    {"artist":"SBS Gayo Daejeon","title":"SBS Gayo Daejeon Stage","logo":"SBS GAYO","venue":"Inspire Arena / Gocheok Sky Dome","scale":"Broadcast Festival","audience":"Large Arena","year":"2022–2024","production":"SBS","tags":["LED Wall","AR Camera","Projection Mapping","Laser System"],"analysis":"Broadcast-oriented production combines large LED screens, camera movement, and quick scenic changes between teams.","visual_link":"https://www.youtube.com/results?search_query=SBS+Gayo+Daejeon+stage+performance"},
+    {"artist":"KBS Song Festival","title":"KBS Gayo Stage","logo":"KBS GAYO","venue":"Broadcast / Arena Venues","scale":"Broadcast Festival","audience":"Broadcast Audience","year":"2022–2024","production":"KBS","tags":["LED Wall","AR Camera","Moving Runway"],"analysis":"A multi-artist broadcast stage using camera-led composition, LED graphics, and modular stage layouts.","visual_link":"https://www.youtube.com/results?search_query=KBS+Song+Festival+Kpop+stage"},
+    {"artist":"MBC Gayo Daejejeon","title":"MBC Gayo Stage","logo":"MBC GAYO","venue":"Broadcast / Arena Venues","scale":"Broadcast Festival","audience":"Broadcast Audience","year":"2022–2024","production":"MBC","tags":["LED Wall","Projection Mapping","AR Camera"],"analysis":"Year-end broadcast production uses symbolic set pieces and digital effects to build event-scale visual identity.","visual_link":"https://www.youtube.com/results?search_query=MBC+Gayo+Daejejeon+Kpop+stage"},
+    {"artist":"SMTOWN","title":"SMTOWN LIVE","logo":"SMTOWN","venue":"Suwon World Cup Stadium / Tokyo Dome","scale":"Family Concert / Stadium","audience":"40,000+","year":"2022–2024","production":"SM Entertainment","tags":["LED Wall","Moving Runway","Laser System","Pyrotechnics"],"analysis":"A large label-family concert format requiring flexible stage systems for many artists and quick performance transitions.","visual_link":"https://www.youtube.com/results?search_query=SMTOWN+LIVE+concert+stage"},
+    {"artist":"KCON","title":"KCON Stage","logo":"KCON","venue":"LA / Japan / Global Arenas","scale":"Convention Concert","audience":"Large Arena","year":"2022–2024","production":"CJ ENM","tags":["LED Wall","AR Camera","Projection Mapping","Graphic Screen Design"],"analysis":"Convention concert staging uses modular production and strong screen branding to support many artists in one program.","visual_link":"https://www.youtube.com/results?search_query=KCON+concert+stage+performance"},
+    {"artist":"Dream Concert","title":"Dream Concert Stage","logo":"DREAM CONCERT","venue":"Seoul World Cup Stadium / Large Venues","scale":"Multi-Artist Stadium Event","audience":"40,000+","year":"2015–2024","production":"Korea Entertainment Producers Association","tags":["LED Wall","Moving Runway","Pyrotechnics","Follow Spot System"],"analysis":"A mass multi-artist event format built around visibility, fast turnovers, and large stadium audience communication.","visual_link":"https://www.youtube.com/results?search_query=Dream+Concert+Kpop+stage"},
+    {"artist":"Coachella","title":"K-pop Festival Stages","logo":"COACHELLA","venue":"Coachella Stage","scale":"Outdoor Festival","audience":"Large Festival","year":"2019–2024","production":"Festival Production","tags":["LED Wall","Laser System","Projection Mapping","Pyrotechnics"],"analysis":"Outdoor festival staging emphasizes strong screen visibility, simplified scenic structure, and broadcast impact.","visual_link":"https://www.youtube.com/results?search_query=Kpop+Coachella+stage+performance"},
+    {"artist":"Lollapalooza","title":"K-pop Festival Performances","logo":"LOLLA","venue":"Grant Park / Festival Stage","scale":"Outdoor Festival","audience":"Large Festival","year":"2022–2024","production":"Festival Production","tags":["LED Wall","Laser System","Graphic Screen Design"],"analysis":"Festival stages rely on wide LED visibility and strong visual branding that can communicate quickly to mixed audiences.","visual_link":"https://www.youtube.com/results?search_query=Kpop+Lollapalooza+stage+performance"},
+    {"artist":"Summer Sonic","title":"K-pop Festival Stages","logo":"SUMMER SONIC","venue":"Japan Festival Stages","scale":"Outdoor / Indoor Festival","audience":"Large Festival","year":"2022–2024","production":"Festival Production","tags":["LED Wall","Laser System","Follow Spot System"],"analysis":"Festival staging focuses on flexible lighting, clean screen visuals, and fast setup for multiple artist lineups.","visual_link":"https://www.youtube.com/results?search_query=Kpop+Summer+Sonic+stage"},
 ]
 
 all_tags = sorted(set(tag for concert in concerts for tag in concert["tags"]))
@@ -427,11 +273,8 @@ def reference_button(concert):
 def render_card(concert):
     with st.container():
         st.markdown('<div class="card">', unsafe_allow_html=True)
-
         visual_card(concert)
-
         st.subheader(concert["title"])
-
         st.markdown(
             f"""
             <p class="meta-text">
@@ -445,15 +288,9 @@ def render_card(concert):
             """,
             unsafe_allow_html=True
         )
-
-        st.markdown(
-            f'<p class="analysis-text">{concert["analysis"]}</p>',
-            unsafe_allow_html=True
-        )
-
+        st.markdown(f'<p class="analysis-text">{concert["analysis"]}</p>', unsafe_allow_html=True)
         st.markdown(tag_html(concert["tags"]), unsafe_allow_html=True)
         reference_button(concert)
-
         st.markdown('</div>', unsafe_allow_html=True)
 
 
@@ -483,7 +320,6 @@ tab1, tab2, tab3 = st.tabs([
 
 with tab1:
     st.header("Explore by Stage Technology")
-
     selected_tag = st.selectbox("Select Technology", ["All"] + all_tags)
 
     if selected_tag == "All":
@@ -508,7 +344,6 @@ with tab2:
     )
 
     selected_concert = next(concert for concert in concerts if concert["title"] == selected_title)
-
     render_card(selected_concert)
 
     st.header("Related Technologies")
@@ -523,8 +358,7 @@ with tab2:
         with st.container(border=True):
             st.subheader(tag)
             if related:
-                st.write("Related concerts:")
-                for title in related[:8]:
+                for title in related[:10]:
                     st.write(f"• {title}")
             else:
                 st.write("No related concerts in the current archive.")
