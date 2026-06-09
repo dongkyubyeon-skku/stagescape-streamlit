@@ -181,6 +181,44 @@ button[data-baseweb="tab"][aria-selected="true"] p {
 .stat-label {
     color: #d0d0d0 !important;
 }
+
+/* ===== SELECTBOX TEXT FIX ===== */
+
+/* 선택박스 본문 */
+div[data-baseweb="select"] {
+    background: white !important;
+}
+
+/* 선택된 값 */
+div[data-baseweb="select"] span {
+    color: black !important;
+}
+
+/* 입력 텍스트 */
+div[data-baseweb="select"] input {
+    color: black !important;
+    -webkit-text-fill-color: black !important;
+}
+
+/* 드롭다운 목록 */
+div[role="listbox"] {
+    background: white !important;
+}
+
+/* 드롭다운 항목 */
+div[role="option"] {
+    color: black !important;
+}
+
+/* 선택된 항목 */
+div[aria-selected="true"] {
+    color: black !important;
+}
+
+/* 화살표 */
+div[data-baseweb="select"] svg {
+    fill: black !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
